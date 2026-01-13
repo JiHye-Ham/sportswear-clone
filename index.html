@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Momo+Trust+Display&family=Nanum+Gothic&family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+    <title>Sports. I can do it.</title>
+</head>
+<body>
+    <header>
+        <!--링크 아이콘들 -->
+        <nav class="header-logo-icons">
+            <a href="#"><i class="fa-solid fa-person-walking"></i></a>
+            <a href="#"><i class="fa-solid fa-arrows-turn-right"></i></a>
+        </nav>
+        <nav class="header-info-links">
+            <ul>
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">가입하기</a></li>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </nav>
+        <!-- 로고 !-->
+        <h1 class="logo">Sports</h1>
+        <nav class="header-products-links">
+            <ul>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Jordan</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+        </nav>
+        <nav class="header-icons">
+            <!--검색 모달창 버튼-->
+            <button id="openSearchModal">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            <!--메뉴 모달 버튼-->
+            <button id="openMenuModal">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <!--모달(검색버튼 클릭시) -->
+        <div class="modal" id="searchModal">
+            <form action="" class="modal-contents search-modal">
+                <div class="modal-search-box">
+                    <input type="text" placeholder="검색">
+                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <button type="button" id="closeSearchModal">취소</button>
+            </form>
+        </div>
+        <!--모달(메뉴버튼 클릭시)-->
+        <div class="modal" id="menuModal">
+            <div class="modal-contents menu-modal">
+                <button id="closeMenuModal">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+                <nav class="menu-modal-links">
+                    <ul>
+                        <li>
+                            <span>BlackFriday</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </li>
+                        <li>
+                            <span>New</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </li>
+                        <li>
+                            <span>Men</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </li>
+                        <li>
+                            <span>Women</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--히어로 영역-->
+        <section class="hero">
+            <div class="video-container">
+                <video src="./videos/hero_video.mp4" controls autoplay muted>
+                    이 브라우저에서 지원하지 않는 영상입니다.
+                </video>
+            </div>
+            <div class="hero-content">
+                <h2>I'm focused on results.</h2>
+                <p>완성된 디자인.</p>
+                <a href="#">
+                    <button class="btn btn--black">구매하기</button>
+                </a>
+            </div>
+        </section>
+        <section class="products">
+            <!--배너 이미지-->
+            <section class="product-banner">
+                <article class="banner-card">
+                    <a href="#">
+                        <img src="./images/banner-img1.jpg" alt="배너이미지1">
+                    </a>
+                    <div class="banner-item">
+                        <p>상품명1</p>
+                        <button class="btn btn--white">구매하기</button>
+                    </div>
+                </article>
+                <article class="banner-card">
+                    <a href="#">
+                        <img src="./images/banner-img2.jpg" alt="배너이미지2">
+                    </a>
+                    <div class="banner-item">
+                        <p>상품명2</p>
+                        <button class="btn btn--white">구매하기</button>
+                    </div>
+                </article>
+                <article class="banner-card">
+                    <a href="#">
+                        <img src="./images/banner-img3.jpg" alt="배너이미지3">
+                    </a>
+                    <div class="banner-item">
+                        <p>상품명3</p>
+                        <button class="btn btn--white">구매하기</button>
+                    </div>
+                </article>
+                <article class="banner-card">
+                    <a href="#">
+                        <img src="./images/banner-img4.jpg" alt="배너이미지4">
+                    </a>
+                    <div class="banner-item">
+                        <p>상품명4</p>
+                        <button class="btn btn--white">구매하기</button>
+                    </div>
+                </article>
+            </section>
+            <!--상품 슬라이드 -->
+            <section class="product-slide">
+                <section class="trend-section">
+                    <h3>Trend</h3>
+                    <div class="trend-card-wrapper">
+                        <article class="trend-card">
+                            <a href="#">
+                                <img src="./images/trend-product-img1.jpg" alt="트렌드구역 상품 이미지1">
+                            </a>
+                            <div class="trend-card-item">
+                                <p>상품명1</p>
+                                <button class="btn btn--black">구매하기</button>
+                            </div>
+                        </article>
+                        <article class="trend-card">
+                            <a href="#">
+                                <img src="./images/trend-product-img2.jpg" alt="트렌드구역 상품 이미지2">
+                            </a>
+                            <div class="trend-card-item">
+                                <p>상품명2</p>
+                                <button class="btn btn--black">구매하기</button>
+                            </div>
+                        </article>
+                        <article class="trend-card">
+                            <a href="#">
+                                <img src="./images/trend-product-img3.jpg" alt="트렌드구역 상품 이미지3">
+                            </a>
+                            <div class="trend-card-item">
+                                <p>상품명3</p>
+                                <button class="btn btn--black">구매하기</button>
+                            </div>
+                        </article>
+                        <article class="trend-card">
+                            <a href="#">
+                                <img src="./images/trend-product-img4.jpg" alt="트렌드구역 상품 이미지4">
+                            </a>
+                            <div class="trend-card-item">
+                                <p>상품명4</p>
+                                <button class="btn btn--black">구매하기</button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!--버튼으로 이동하는 슬라이드 이미지-->
+                <section class="icon-section">
+                    <h3>Icon</h3>
+                    <div class="icon-card-wrapper">
+                        <article class="icon-card">
+                            <a href="#">
+                                <img src="./images/icon-product-img1.jpg" alt="아이콘구역 상품 이미지1">
+                            </a>
+                        </article>
+                        <article class="icon-card">
+                            <a href="#">
+                                <img src="./images/icon-product-img2.jpg" alt="아이콘구역 상품 이미지2">
+                            </a>
+                        </article>
+                        <article class="icon-card">
+                            <a href="#">
+                                <img src="./images/icon-product-img3.jpg" alt="아이콘구역 상품 이미지3">
+                            </a>
+                        </article>
+                        <article class="icon-card">
+                            <a href="#">
+                                <img src="./images/icon-product-img4.jpg" alt="아이콘구역 상품 이미지4">
+                            </a>
+                        </article>
+                        <article class="icon-card">
+                            <a href="#">
+                                <img src="./images/icon-product-img5.jpg" alt="아이콘구역 상품 이미지5">
+                            </a>
+                        </article>
+                        <article class="icon-card">
+                            <a href="#">
+                                <img src="./images/icon-product-img6.jpg" alt="아이콘구역 상품 이미지6">
+                            </a>
+                        </article>
+                        <article class="icon-card">
+                            <a href="#">
+                                <img src="./images/icon-product-img7.jpg" alt="아이콘구역 상품 이미지7">
+                            </a>
+                        </article>
+                    </div>
+                    <!--이동 아이콘-->
+                    <div class="slide-controls">
+                        <button class="move-btn btn-prev" id="prevBtn">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button class="move-btn btn-next" id="nextBtn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </section>
+            </section> 
+        </section>
+    </main>
+    <footer>
+        <nav class="footer-nav-products">
+            <section class="products-dropdown">
+                <h3 class="products-dropdown-btn">Featured</h3>
+                <ul class="products-dropdown-content">
+                    <li><a href="#">에어 포스</a></li>
+                    <li><a href="#">에어 조던</a></li>
+                    <li><a href="#">에어 맥스</a></li>
+                    <li><a href="#">빌드 제네럴</a></li>
+                </ul>
+            </section>
+            <section class="products-dropdown">
+                <h3 class="products-dropdown-btn">신발</h3>
+                <ul class="products-dropdown-content">
+                    <li><a href="#">전체 보기</a></li>
+                    <li><a href="#">러닝</a></li>
+                    <li><a href="#">축구</a></li>
+                    <li><a href="#">농구</a></li>
+                </ul>
+            </section>
+            <section class="products-dropdown">
+                <h3 class="products-dropdown-btn">의류</h3>
+                <ul class="products-dropdown-content">
+                    <li><a href="#">전체 보기</a></li>
+                    <li><a href="#">탑 & 티셔츠</a></li>
+                    <li><a href="#">쇼츠</a></li>
+                    <li><a href="#">재킷 & 베스트</a></li>
+                </ul>
+            </section>
+            <section class="products-dropdown">
+                <h3 class="products-dropdown-btn">kids</h3>
+                <ul class="products-dropdown-content">
+                    <li><a href="#">신발 전체 보기</a></li>
+                    <li><a href="#">키즈 런닝 신발</a></li>
+                    <li><a href="#">키즈 축구 신발</a></li>
+                    <li><a href="#">키즈 농구 신발</a></li>
+                </ul>
+            </section>
+        </nav>
+        <nav class="footer-nav-info">
+            <section class="info-dropdown">
+                <div class="info-dropdown-icon">
+                    <p>안내</p>
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                <ul class="info-dropdown-content">
+                    <li><a href="#">멤버 가입</a></li>
+                    <li><a href="#">매장 찾기</a></li>
+                    <li><a href="#">제품 가이드</a></li>
+                    <li><a href="#">러닝화 가이드</a></li>
+                </ul>
+            </section>
+            <section class="info-dropdown">
+                <div class="info-dropdown-icon">
+                    <p>멤버혜택</p>
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                <ul class="info-dropdown-content">
+                    <li><a href="#">웰컴 쿠폰</a></li>
+                    <li><a href="#">생일 쿠폰</a></li>
+                    <li><a href="#">학생 할인 쿠폰</a></li>
+                </ul>
+            </section>
+            <section class="info-dropdown">
+                <div class="info-dropdown-icon">
+                    <p>고객센터</p>
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                <ul class="info-dropdown-content">
+                    <li><a href="#">주문배송조회</a></li>
+                    <li><a href="#">반품 정책</a></li>
+                    <li><a href="#">결제 방법</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">문의하기</a></li>
+                </ul>
+            </section>
+        </nav>
+        <section class="footer-legacy">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">위치정보이용약관</a></li>
+                <li><a href="#">영상정보처리기기운영방침</a></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/2d92769167.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
